@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+
+    text-align: center;
+    justify-content: center;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+#main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 550px;
+    min-width: 550px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24vh;
+    border-radius: 5px;
+
+}
+.image{
+    width:auto;
+    height: 400px;
+    border-radius: 5px 0 0 5px;
+}
+.description{
+    height: 400px;
+    margin: 0;
+    display: block;
+    padding: 22px;
+}
+.description .perfume_font{
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    text-align:start;
+    margin-bottom: 10%;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+}
+.description h1{
+    display: flex;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10%;
+
+}
+.description .perfume_description{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-align:start;
+    margin-bottom: 10%;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.description .offert_price{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    text-align:start;
+    margin-bottom: 10%;
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span{
+    font-size: 12px;
+    margin-right: 35px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+#button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 150px;
+    height: 35px;
+    margin-top: 10%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color:white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover{
+    color:white;
+    background-color: hsl(158, 61%, 15%);
+}
+@media (max-width:650px) {
+
+    .container{
+        flex-direction: column;
+        width: 300px;
+        min-width: 300px;
+        max-height: 370px;
+        margin: 15vh;
+    }
+    .image{
+        width:300px;
+        height: 250px;
+        clip-path: inset(25px 0 10% 0 round 10px);
+        position: relative;
+        top:-10%;
+    }
+    .description{
+        height: 450px;
+        margin: 0;
+        display: block;
+        padding: 10px;
+        background-color:white;
+        position: relative;
+        margin-top:-18%;
+        border-radius: 0 0 10px 10px;
+    }
+    .description .perfume_font, .description h1,
+    .description .perfume_description, .description .offert_price{
+        margin-bottom:2%
+    }
+    span{
+        margin-right: 80px;
+    }
+    button{
+        width: 225px;
+    }
+}
